@@ -1,0 +1,15 @@
+.cell {
+    height: 15px;
+    width: 15px;
+    background-color: rgb(182, 28, 28);
+    border: 1px solid;
+    border-color: aqua;
+}
+
+.contribution-calendar {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;  
+    height: 20px;
+}
