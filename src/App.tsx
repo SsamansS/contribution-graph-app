@@ -7,11 +7,17 @@ import { CellProps } from './components/cell/CellInterface';
 
 
 function App() {
-  console.log(moment())
+  const array: number[] = [];
+
+  for (let i = 0; i < 365; i++) {
+    array.push(i);
+  }
+
+  console.log(array);
   return (
     <div className='contribution-calendar'>
-      {[1,2,3,4,5,6].map((item, index) => {
-        return (<Cell color="#0000" key={index} />)
+      {array.map((item, index) => {
+        return (<Cell color="#e63946" key={index} />)
       })}
     </div>
   );

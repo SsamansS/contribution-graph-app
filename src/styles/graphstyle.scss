@@ -1,15 +1,20 @@
+@use "sass:math";
+
 .cell {
     height: 15px;
     width: 15px;
-    background-color: rgb(182, 28, 28);
+    background-color: rgb(195, 15, 15);
     border: 1px solid;
     border-color: aqua;
 }
 
 .contribution-calendar {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-row-gap: 20px;
-    grid-column-gap: 20px;  
-    height: 20px;
+    // grid-template-columns: repeat(math.div(365, 7), 1fr);
+    // grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(52, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    // grid-gap: 10px;
+    max-height: 105px;
+    overflow: auto;
 }
